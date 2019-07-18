@@ -1,0 +1,428 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5B48FD8422DEC82A00CDA57B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B48FD8322DEC82A00CDA57B /* AppDelegate.m */; };
+		5B48FD8722DEC82A00CDA57B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B48FD8622DEC82A00CDA57B /* ViewController.m */; };
+		5B48FD8A22DEC82A00CDA57B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B48FD8822DEC82A00CDA57B /* Main.storyboard */; };
+		5B48FD8C22DEC82C00CDA57B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5B48FD8B22DEC82C00CDA57B /* Assets.xcassets */; };
+		5B48FD8F22DEC82C00CDA57B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B48FD8D22DEC82C00CDA57B /* LaunchScreen.storyboard */; };
+		5B48FD9222DEC82C00CDA57B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B48FD9122DEC82C00CDA57B /* main.m */; };
+		5B48FD9D22DEF8B000CDA57B /* VideoCompress.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B48FD9C22DEF8B000CDA57B /* VideoCompress.m */; };
+		5B48FD9F22DEFA4B00CDA57B /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B48FD9E22DEFA4B00CDA57B /* AVFoundation.framework */; };
+		926123913FD57F5737C71E15 /* Pods_AVFoundationVideoCustomComPressedDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 893A7E5651E5D235DBD4AB86 /* Pods_AVFoundationVideoCustomComPressedDemo.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		02231444EE3E9FCFCE300218 /* Pods-AVFoundationVideoCustomComPressedDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AVFoundationVideoCustomComPressedDemo.debug.xcconfig"; path = "Target Support Files/Pods-AVFoundationVideoCustomComPressedDemo/Pods-AVFoundationVideoCustomComPressedDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		5B48FD7F22DEC82A00CDA57B /* AVFoundationVideoCustomComPressedDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AVFoundationVideoCustomComPressedDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5B48FD8222DEC82A00CDA57B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		5B48FD8322DEC82A00CDA57B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		5B48FD8522DEC82A00CDA57B /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		5B48FD8622DEC82A00CDA57B /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		5B48FD8922DEC82A00CDA57B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5B48FD8B22DEC82C00CDA57B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5B48FD8E22DEC82C00CDA57B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5B48FD9022DEC82C00CDA57B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5B48FD9122DEC82C00CDA57B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		5B48FD9B22DEF8B000CDA57B /* VideoCompress.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VideoCompress.h; sourceTree = "<group>"; };
+		5B48FD9C22DEF8B000CDA57B /* VideoCompress.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VideoCompress.m; sourceTree = "<group>"; };
+		5B48FD9E22DEFA4B00CDA57B /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		5B48FDA022DEFA5B00CDA57B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		5B48FDA222DEFA8D00CDA57B /* AVKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVKit.framework; path = System/Library/Frameworks/AVKit.framework; sourceTree = SDKROOT; };
+		682902DCA906523121F0719A /* Pods-AVFoundationVideoCustomComPressedDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AVFoundationVideoCustomComPressedDemo.release.xcconfig"; path = "Target Support Files/Pods-AVFoundationVideoCustomComPressedDemo/Pods-AVFoundationVideoCustomComPressedDemo.release.xcconfig"; sourceTree = "<group>"; };
+		893A7E5651E5D235DBD4AB86 /* Pods_AVFoundationVideoCustomComPressedDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AVFoundationVideoCustomComPressedDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5B48FD7C22DEC82A00CDA57B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5B48FD9F22DEFA4B00CDA57B /* AVFoundation.framework in Frameworks */,
+				926123913FD57F5737C71E15 /* Pods_AVFoundationVideoCustomComPressedDemo.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5B48FD7622DEC82A00CDA57B = {
+			isa = PBXGroup;
+			children = (
+				5B48FD8122DEC82A00CDA57B /* AVFoundationVideoCustomComPressedDemo */,
+				5B48FD8022DEC82A00CDA57B /* Products */,
+				8C5EC2C0D610C9D92703C94D /* Pods */,
+				D796FC56B729C861AD88A4C8 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		5B48FD8022DEC82A00CDA57B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5B48FD7F22DEC82A00CDA57B /* AVFoundationVideoCustomComPressedDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5B48FD8122DEC82A00CDA57B /* AVFoundationVideoCustomComPressedDemo */ = {
+			isa = PBXGroup;
+			children = (
+				5B48FD8222DEC82A00CDA57B /* AppDelegate.h */,
+				5B48FD8322DEC82A00CDA57B /* AppDelegate.m */,
+				5B48FD8522DEC82A00CDA57B /* ViewController.h */,
+				5B48FD8622DEC82A00CDA57B /* ViewController.m */,
+				5B48FD9B22DEF8B000CDA57B /* VideoCompress.h */,
+				5B48FD9C22DEF8B000CDA57B /* VideoCompress.m */,
+				5B48FD8822DEC82A00CDA57B /* Main.storyboard */,
+				5B48FD8B22DEC82C00CDA57B /* Assets.xcassets */,
+				5B48FD8D22DEC82C00CDA57B /* LaunchScreen.storyboard */,
+				5B48FD9022DEC82C00CDA57B /* Info.plist */,
+				5B48FD9122DEC82C00CDA57B /* main.m */,
+			);
+			path = AVFoundationVideoCustomComPressedDemo;
+			sourceTree = "<group>";
+		};
+		8C5EC2C0D610C9D92703C94D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				02231444EE3E9FCFCE300218 /* Pods-AVFoundationVideoCustomComPressedDemo.debug.xcconfig */,
+				682902DCA906523121F0719A /* Pods-AVFoundationVideoCustomComPressedDemo.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		D796FC56B729C861AD88A4C8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5B48FDA222DEFA8D00CDA57B /* AVKit.framework */,
+				5B48FDA022DEFA5B00CDA57B /* UIKit.framework */,
+				5B48FD9E22DEFA4B00CDA57B /* AVFoundation.framework */,
+				893A7E5651E5D235DBD4AB86 /* Pods_AVFoundationVideoCustomComPressedDemo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5B48FD7E22DEC82A00CDA57B /* AVFoundationVideoCustomComPressedDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5B48FD9522DEC82C00CDA57B /* Build configuration list for PBXNativeTarget "AVFoundationVideoCustomComPressedDemo" */;
+			buildPhases = (
+				31127C65C3D067ED141C755A /* [CP] Check Pods Manifest.lock */,
+				5B48FD7B22DEC82A00CDA57B /* Sources */,
+				5B48FD7C22DEC82A00CDA57B /* Frameworks */,
+				5B48FD7D22DEC82A00CDA57B /* Resources */,
+				0CB1D52D5114C0FBA04458E3 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AVFoundationVideoCustomComPressedDemo;
+			productName = AVFoundationVideoCustomComPressedDemo;
+			productReference = 5B48FD7F22DEC82A00CDA57B /* AVFoundationVideoCustomComPressedDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5B48FD7722DEC82A00CDA57B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = MWM;
+				TargetAttributes = {
+					5B48FD7E22DEC82A00CDA57B = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+				};
+			};
+			buildConfigurationList = 5B48FD7A22DEC82A00CDA57B /* Build configuration list for PBXProject "AVFoundationVideoCustomComPressedDemo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5B48FD7622DEC82A00CDA57B;
+			productRefGroup = 5B48FD8022DEC82A00CDA57B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5B48FD7E22DEC82A00CDA57B /* AVFoundationVideoCustomComPressedDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5B48FD7D22DEC82A00CDA57B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5B48FD8F22DEC82C00CDA57B /* LaunchScreen.storyboard in Resources */,
+				5B48FD8C22DEC82C00CDA57B /* Assets.xcassets in Resources */,
+				5B48FD8A22DEC82A00CDA57B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0CB1D52D5114C0FBA04458E3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AVFoundationVideoCustomComPressedDemo/Pods-AVFoundationVideoCustomComPressedDemo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AVFoundationVideoCustomComPressedDemo/Pods-AVFoundationVideoCustomComPressedDemo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AVFoundationVideoCustomComPressedDemo/Pods-AVFoundationVideoCustomComPressedDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		31127C65C3D067ED141C755A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AVFoundationVideoCustomComPressedDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5B48FD7B22DEC82A00CDA57B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5B48FD8722DEC82A00CDA57B /* ViewController.m in Sources */,
+				5B48FD9D22DEF8B000CDA57B /* VideoCompress.m in Sources */,
+				5B48FD9222DEC82C00CDA57B /* main.m in Sources */,
+				5B48FD8422DEC82A00CDA57B /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		5B48FD8822DEC82A00CDA57B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5B48FD8922DEC82A00CDA57B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		5B48FD8D22DEC82C00CDA57B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5B48FD8E22DEC82C00CDA57B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5B48FD9322DEC82C00CDA57B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		5B48FD9422DEC82C00CDA57B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5B48FD9622DEC82C00CDA57B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 02231444EE3E9FCFCE300218 /* Pods-AVFoundationVideoCustomComPressedDemo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 39T7R57AU6;
+				INFOPLIST_FILE = AVFoundationVideoCustomComPressedDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.yinggu.lanmeiquan;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5B48FD9722DEC82C00CDA57B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 682902DCA906523121F0719A /* Pods-AVFoundationVideoCustomComPressedDemo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 39T7R57AU6;
+				INFOPLIST_FILE = AVFoundationVideoCustomComPressedDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.yinggu.lanmeiquan;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5B48FD7A22DEC82A00CDA57B /* Build configuration list for PBXProject "AVFoundationVideoCustomComPressedDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5B48FD9322DEC82C00CDA57B /* Debug */,
+				5B48FD9422DEC82C00CDA57B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5B48FD9522DEC82C00CDA57B /* Build configuration list for PBXNativeTarget "AVFoundationVideoCustomComPressedDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5B48FD9622DEC82C00CDA57B /* Debug */,
+				5B48FD9722DEC82C00CDA57B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5B48FD7722DEC82A00CDA57B /* Project object */;
+}
