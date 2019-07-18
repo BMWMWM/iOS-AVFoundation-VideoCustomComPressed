@@ -120,7 +120,7 @@
             if (sampleBuffer != NULL) {
                 [videoInput appendSampleBuffer:sampleBuffer];
                 NSLog(@"===%@===", sampleBuffer);
-                sampleBuffer = NULL;
+                CFRelease(sampleBuffer);
             } else {
                 completedOrFailed = YES;
                 [videoInput markAsFinished];
@@ -137,7 +137,7 @@
             if (sampleBuffer != NULL) {
                 BOOL success = [audioInput appendSampleBuffer:sampleBuffer];
                 NSLog(@"===%@===", sampleBuffer);
-                sampleBuffer = NULL;
+                CFRelease(sampleBuffer);
                 completedOrFailed = !success;
             } else {
                 completedOrFailed = YES;
@@ -202,7 +202,7 @@
                                          AVVideoExpectedSourceFrameRateKey : @(frameRate),
                                          AVVideoProfileLevelKey : AVVideoProfileLevelH264HighAutoLevel
                                          };
-//    if (@available(iOS 11.0, *)) {
+    if (@available(iOS 11.0, *)) {
         NSDictionary *compressSetting = @{
                                           AVVideoCodecKey : AVVideoCodecTypeH264,
                                           AVVideoWidthKey : @(returnWidth),
@@ -211,16 +211,16 @@
                                           AVVideoScalingModeKey : AVVideoScalingModeResizeAspectFill
                                           };
         return compressSetting;
-//    }else {
-//        NSDictionary *compressSetting = @{
-//                                          AVVideoCodecKey : AVVideoCodecTypeH264,
-//                                          AVVideoWidthKey : @(returnWidth),
-//                                          AVVideoHeightKey : @(returnHeight),
-//                                          AVVideoCompressionPropertiesKey : compressProperties,
-//                                          AVVideoScalingModeKey : AVVideoScalingModeResizeAspectFill
-//                                          };
-//        return compressSetting;
-//    }
+    }else {
+        NSDictionary *compressSetting = @{
+                                          AVVideoCodecKey : AVVideoCodecTypeH264,
+                                          AVVideoWidthKey : @(returnWidth),
+                                          AVVideoHeightKey : @(returnHeight),
+                                          AVVideoCompressionPropertiesKey : compressProperties,
+                                          AVVideoScalingModeKey : AVVideoScalingModeResizeAspectFill
+                                          };
+        return compressSetting;
+    }
 }
 //音频设置
 + (NSDictionary *)audioCompressSettings{

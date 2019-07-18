@@ -110,10 +110,22 @@
         //帧率
         NSInteger frameRate = [videoTrack nominalFrameRate];
         NSLog(@"\nfileSize after compress = %.2f MB,\n videoWidth = %ld,\n videoHeight = %ld,\n video bitRate = %ld\n, video frameRate = %ld", fileSizeMB, videoWidth, videoHeight, kbps, frameRate);
-        //                NSData *videoData = [NSData dataWithContentsOfFile:filePathStr];
+//        NSData *videoData = [NSData dataWithContentsOfFile:filePathStr];
         //                    NSData *videoData = [NSData dataWithContentsOfURL:asset.URL];
-        //在这里上传已经处理好的视频文件
+        //在这里上传或者保存已经处理好的视频文件
+        //保存视频至相册
+        UISaveVideoAtPathToSavedPhotosAlbum(filePathStr, self, @selector(videoSavedToPhotosAlbum:didFinishSavingWithError:contextInfo:), nil);
     }];
+}
+#pragma mark 保存视频后的回调
+- (void)videoSavedToPhotosAlbum:(NSString *)videoUrlStr didFinishSavingWithError:(NSError*)error contextInfo:(id)contextInfo{
+    NSString*message =@"提示";
+    if(!error) {
+        message = @"视频成功保存到相册";
+    }else{
+        message = [error description];
+    }
+    [self showAlertViewWithTitle:@"提示" message:message withCancelButtonTitle:@"确定"];
 }
 - (void)showAlertViewWithTitle:(NSString*)title message:(NSString*)msg withCancelButtonTitle:(NSString *)cancelButtonTitle{
     UIAlertController* alertController = [UIAlertController alertControllerWithTitle:title message:@"" preferredStyle:UIAlertControllerStyleAlert];
